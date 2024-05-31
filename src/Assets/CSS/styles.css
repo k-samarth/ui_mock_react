@@ -1,0 +1,17 @@
+.chat_input_label{
+    padding: 20px;
+}
+.chat_input{
+    padding: 20px;
+    font-size: 18px;
+}
+.chat_send_button{
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: rgb(5, 255, 172);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
