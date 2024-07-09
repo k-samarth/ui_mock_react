@@ -9,13 +9,14 @@ const ChatWindow = (props) => {
     useEffect(() => {
 
         props.socket.on('message_get', (message) => {
-            setMessages([...messages, message]);
+            setMessages(prev => prev = [...messages, message])
         });
     }, [props.socket]);
     
     function send_message(event) {
         event.preventDefault()
         props.socket.emit('message_send',message)
+        setMessages(prev => prev = [...messages, message]);
         setMessage('')
     }
     function update_message(event) {
